@@ -7,6 +7,8 @@ export default defineConfig({
   plugins: [
     react(),
     VitePWA({
+      base: '/pwa-testing/',
+      scope: '/pwa-testing/',
       registerType: 'autoUpdate',
       includeAssets: ['favicon.svg', 'robots.txt'],
       workbox: {
@@ -17,8 +19,8 @@ export default defineConfig({
         name: 'App React',
         short_name: 'React',
         description: 'App React + Vite PWA',
-        scope:'/',
-        start_url: '/',
+        scope: '/pwa-testing/',
+        start_url: '/pwa-testing/',
         display: 'standalone',
         background_color: '#FFFFFF',
         theme_color: '#228be6',
