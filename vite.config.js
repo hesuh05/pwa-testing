@@ -4,7 +4,6 @@ import { VitePWA } from 'vite-plugin-pwa'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/pwa-testing/',
   plugins: [
     react(),
     VitePWA({
@@ -18,6 +17,7 @@ export default defineConfig({
         name: 'App React',
         short_name: 'React',
         description: 'App React + Vite PWA',
+        scope:'/',
         start_url: '/',
         display: 'standalone',
         background_color: '#FFFFFF',
